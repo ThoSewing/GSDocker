@@ -1,0 +1,5 @@
+# Construa a imagem Docker
+docker build -t node-docker-app .
+
+# Execute o contêiner a partir da imagem criada
+docker run -d -p 8090:8090 --name node-app node-docker-app
